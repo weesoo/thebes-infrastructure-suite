@@ -6,6 +6,20 @@ Instead of forcing a one-size-fits-all setup, this framework uses a **Modular Pr
 
 ---
 
+## ⚡ Current Project Status: Active Learning & Development
+> ⚠️ **Note to Reviewers:** This repository is currently under **Active Development**. I am dynamically building out this infrastructure framework while deeply studying the Thebes protocol specs, Substrate architecture, and advanced Linux/AWS security patterns. Commits are pushed regularly as my learning progresses.
+
+---
+
+## 📂 Repository Code Status (Transparent Roadmap)
+
+To ensure full transparency during review, here is the current status of the codebase:
+*   **`terraform/`**: Directory structure initialized and tracked via `.gitkeep`. Foundational AWS VPC and EC2 modules will be drafted next as cloud architecture patterns are reviewed.
+*   **`ansible/`**: Base layout created. Roles for OS hardening and binary automation will be pushed in parallel with protocol installation guide syncs next week.
+*   **`.gitignore`**: Fully configured for production security to prevent any accidental leakage of private keys (`.pem`, `.key`) or environment secrets.
+
+---
+
 ## 🏗️ Modular Subnet Profiles
 
 Each subnet requires unique hardware configurations and security baselines. This repository isolates them into independent deployment profiles:
@@ -28,6 +42,7 @@ Each subnet requires unique hardware configurations and security baselines. This
 ## 🚀 Future Roadmap & Work-in-Progress (WIP)
 
 - [x] Design modular multi-subnet directory layout and security rules (`.gitignore`).
+- [🔄] **[In Progress]** Deep-diving into Thebes protocol documentation and Linux fundamentals.
 - [ ] Develop independent Terraform modules for custom hardware scaling on AWS.
 - [ ] Build specialized Ansible roles for targeted node software deployment and OS hardening.
 - [ ] Implement individual node telemetry and health monitoring.
